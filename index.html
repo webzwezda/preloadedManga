@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/master.css">
+    <script async src="alert.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<main>
+
+    <p class="centered galholder">
+        <a href="#" id="prevBut" class="galbut" onclick="return prevClick()" style="display: none">
+            <img src="pic/arrow-left.png" alt="Prev"></a>
+        <a href="#" onclick="return nextClick()">
+            <img id="IMGdisplayer" src="pic/manga/OneMangaDay_000_001.png" height="1200" alt="Image viewer"
+                 class="vmiddle"/>
+        </a>
+        <a href="#" id="nextBut" class="galbut" onclick="return nextClick()">
+            <img src="pic/arrow-right.png" alt="Next">
+        </a>
+    </p>
+
+    <script type="text/javascript">
+        document.getElementById("prevBut").style.display = "";
+        document.getElementById("nextBut").style.display = "";
+    </script>
+
+    <div style="display: none">
+        <img id="IMGpreloader" src="pic/manga/OneMangaDay_000_002.png" width="1" height="1" alt="."/>
+    </div>
+</main>
+</body>
+</html>
